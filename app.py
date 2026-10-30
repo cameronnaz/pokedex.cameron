@@ -22,3 +22,5 @@ data = json.load(pokedex)
 
 for index, item in enumerate(data):
     print(index, ':', item['name'])
+    if ['name'] == "Bulbasaur":
+        print("i have found ur bulbasor)")
