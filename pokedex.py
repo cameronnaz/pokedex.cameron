@@ -1,4 +1,6 @@
 def pokedex():
     pokemon = "bulbasor"
-    print(pokemon)
+    type = "leaf"
+    attack = "headbutt"
+    print(pokemon, type, attack)
 pokedex()
