@@ -1,6 +1,5 @@
 def pokedex():
-    pokemon = "bulbasor"
-    type = "leaf"
-    attack = "headbutt"
-    print(pokemon, type, attack)
+    count = 500
+    while pokedex == "True":
+        count +=1
 pokedex()

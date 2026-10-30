@@ -16,3 +16,9 @@ print(data[0])
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
+import json
+pokedex = open("./pokedex.json", encoding="utf8")
+data = json.load(pokedex)
+
+for index, item in enumerate(data):
+    print(index, ':', item['name'])
