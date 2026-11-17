@@ -26,7 +26,7 @@ else:
 def name():
     list = []
     search = input("Find a pokemon").lower()
-    for i in (len(data)):
+    for i in len(data):
         if search in data['name']:
             list.appemd(data[i]['name'])
     if len(list) == 0:
