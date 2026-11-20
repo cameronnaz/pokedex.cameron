@@ -40,11 +40,14 @@ data = json.load(moves)
 def pokmoves():
     movelist = []
     pokmon_search = print(input("What pokemon do you want to see the moves of"))
-    for i in range(data):
-        if pokmon_search == data[i]['name']:
-            for i in range(moves):
-                if moves[i]['type'] in pokmon_search[i]['type']:
-                    movelist.append(moves[i])
+    for pokemon in data:
+        if pokmon_search == pokemon['ename']:
+            for pokemon in data:
+                if pokmon_search in data[pokemon]['type']:
+                    movelist.append(data[pokemon]['ename'])
     print(movelist)
 
 pokmoves()
+
+
+#make i just for a single pokemon
